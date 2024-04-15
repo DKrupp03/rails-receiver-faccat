@@ -3,8 +3,6 @@ class UserMailer < ApplicationMailer
 
   def user_register(user)
     @user = user
-    p '--------------------------------'
-    p user
     mail(to: user['email'], subject: 'Usuário cadastrado!')
   end
 end
